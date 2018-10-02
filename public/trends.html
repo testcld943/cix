@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IPL Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/guage.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+<div id="wrapper" class="shadow">
+    <header>
+        <!--Office-->
+        <div id="officeDetails" class="floatleft">
+            <label class="floatleft">OFFICE</label>
+            <!--Need to include custom drop down later-->
+            <select id="dropdown" class="officeSelect" onChange="displayGrid()">
+                <option>-- Select --</option>
+                <option>Austin, TX 0035</option>
+            </select>
+            <!-- <div class="floatleft" id="dropdown">
+                Austin, TX 0035
+            </div> -->
+        </div>
+        <div id="searchSect" class="floatleft">
+            <div id="searchInpSect">
+                <input type="text" placeholder="Search by tags, Office"/>
+                <button>SEARCH</button>
+            </div>
+        </div>
+        <div id="remainderSect" class="floatleft">
+            
+           
+            <div id="profilePic" class="floatright circle">
+                <span>MC</span>
+                <span class="decorator"></span>
+            </div>
+             <div class="floatright"><img id="mail" src="assets/images/mail.png"/></div>
+            <div class="floatright"><img id="bell" src="assets/images/bell.png"/></div>
+        </div>
+        
+    </header>
+    <div id="container" style="display:none">
+        <div class="width-40 floatleft">
+            <div class="dbComp">
+                <div id="profile-sect">
+                    <div id="profile-image"></div>
+                    <div id="profile-details">
+                    <div>
+                    <h3 class="inline-block">Michael H Coleman</h3>
+                    <div class="inline-block">
+                    <div class="greenstardiv">
+                        &#x2605;
+                    </div>
+                    <div class="greenstardiv">
+                        &#x2605;
+                    </div>
+                    <div class="greenstardiv">
+                        &#x2605;
+                    </div>
+                    <div class="greenstardiv">
+                        &#x2605;
+                    </div>
+                    <div class="greenstardiv halfstardiv">
+                        &#x2605;
+                        <div class="halfstar">&#x2605;</div>
+                    </div>
+                    </div>
+                    </div>
+                    <address>DNOS - Austin,TX</address>
+                    <div id="score-details">
+                    <div class="float-left">
+                    <p>CUMULATIVE SCORE #</p>
+                    <p>63%</p>
+                    </div>
+                    <div class="float-right">
+                    <div class="blocks-10"><span></span><span></span><span></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span></div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div id="star-products">
+                    <div id="products">
+                    <p>STAR PRODUCTS</p>
+                    <ul class="green">
+                    <li><span class="trailE">Deferred Income Annuity</span></li>
+                    <li><span class="trailE">Singe Premium Universal Life</span></li>
+                    <li>Adjustable Comp Life</li>
+                    <li><span class="trailE">Long Term Care</span></li>
+                    <li>Fund Advisory</li>
+                    </ul>
+                    </div>
+                    <div id="laggards">
+                    <p>LAGGARDS</p>
+                    <ul class="orange">
+                    <li>Term-20</li>
+                    <li>Estate Planning</li>
+                    <li>Disability Income - TT Series</li>
+                    <li>Long Term Care</li>
+                    <li><span class="leadE">Fund Advisory</span></li>
+                    </ul>
+                    </div>
+                    </div>
+
+            </div>
+             <div class="dbComp" id="gaugeDbComp">
+                 <!--Gauage-->
+                 <h4>COMPLIANCE DASHBOARD</h4>
+ <div class="squarewrapper">
+                        <div class="square">
+                            <div class="csscircle circle12innerlarge">
+                                <div class="segmentwrapper segment1">
+                                    <div class="segment">
+                                        <div class="inner"></div>
+                                        <div class="text">Low</div>
+                                    </div>
+                                </div>
+                                <div class="segmentwrapper segment2">
+                                    <div class="segment"><div class="inner"></div><div class="text">Basic</div></div>
+                                </div>
+                                <div class="segmentwrapper segment3">
+                                    <div class="segment"><div class="inner"></div><div class="text">Average</div></div>
+                                </div>
+                                <div class="segmentwrapper segment4">
+                                    <div class="segment"><div class="inner"></div><div class="text">Good</div></div>
+                                </div>
+                                <div class="segmentwrapper segment5">
+                                    <div class="segment"><div class="inner"></div><div class="text">Best</div></div>
+                                </div>
+                                <div class="segmentwrapper segment12">
+                                    <div class="segment"><div class="inner"></div><div class="text">Bad</div></div>
+                                </div>
+                                 <div class="needle"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                  <div id="gauge-legend">
+                  <div>
+                  <p>81%</p>
+                  <p>STATE AVG SCORE</p>
+                  </div>
+                  <div>
+                  <p>95%</p>
+                  <p>ORGANIZATIONAL BENCHMARK</p>
+                  </div>
+                  </div>
+</div>
+
+        </div>     
+        <div class="width-25 floatleft">
+            <div class="dbComp">
+<div class="content"><p>12% reported issues realated to product sales where customer is over 65 years old</p></div>
+<p>Products accounting for 53% of issues reported</p>
+<ul>
+<li>Life Term</li>
+<li>Life Permanent</li>
+<li><span class="trailE">Annuity Fixed</span></li>
+<li>Signature Annuities</li>
+<li><span class="trailE">Quiet Care</span></li>
+<li>Private Securities</li>
+</ul>
+<h5>TOP 5 REP'S ASSOCIATED WITH 45% TAGGED ISSUES</h5>
+<ul id="rep-sect">
+<li>
+<div class="blocks-10"><span></span><span></span><span></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span></div>
+</li>
+<li><a style="text-decoration: none;" href="/compliance-dashboard">James H Coleman</a></li>
+<li>
+<div class="blocks-10"><span></span><span></span><span></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span></div>
+</li>
+<li>Lou Eshleman</li>
+<li>
+<div class="blocks-10"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span></div>
+</li>
+<li>Eboni Chavaria</li>
+<li>
+<div class="blocks-10"><span></span><span></span><span></span><span></span><span></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span></div>
+</li>
+<li>Marybunth Sinnott</li><li>
+<div class="blocks-10"><span></span><span></span><span></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span><span class="orange-bg"></span></div>
+</li>
+<li>Ashlea Ridings</li>
+</ul>
+</div>
+
+        </div>
+        <div class="width-35 floatleft">
+             <div class="dbComp bg-blue">
+<div class="content">
+<h4>COMPLIANCE TRENDS</h4>
+<p class="green">7.5% increase in issues reported over last Quarter</p>
+<p>31% reported issues due to potential mis-sale and lack of knowledge*</p>
+<ul id="progressect" class="green">
+<li>3W</li>
+<li>2M</li>
+<li class="select">Q</li>
+<li class="red-border-bottom">6M</li>
+<li class="red-border-bottom">YTD</li>
+<li class="orange-border-bottom">IY</li>
+<li class="orange-border-bottom">3Y</li>
+</ul>
+<ul id="list-sect">
+<li class="red"><span class="trailE">product mis-selling</span></li>
+<li class="red">commission issue</li>
+<li class="red">product knowldge</li>
+<li class="orange">agent fraud</li>
+<li class="orange">check mishandling</li>
+<li class="orange">ERISA</li>
+<li>registration</li>
+<li>DODD FRANK</li>
+<li>signature forgery</li>
+<li>lower than assured returns</li>
+</ul>
+<p class="margin-top-50">*Based on repoted issues,complaints,customer feedbacks</p>
+</div>
+</div>
+
+</div>
+
+        </div>     
+    </div>
+    <footer>
+
+    </footer>
+</div>
+</body>
+<script>
+    function displayGrid() {
+        document.getElementById('container').style.display = 'block'
+    }
+</script>
+</html>
