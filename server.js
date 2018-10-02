@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors')
 const bodyParser = require('body-parser');
+const path = require('path')
  
 const app = express();
 const http = require('http');//.Server(app);
@@ -26,6 +27,9 @@ app.use('/policy', policy);
 app.use('/message', message);
 app.use('/complaint', complaint);
 
+app.get('*', (request, response) => {
+	response.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 
   io.on('connection', (client) => {
