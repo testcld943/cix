@@ -9,6 +9,7 @@ const message = mongoose.Schema({
    message: {type: String, required: true},
    flagged: {type: Boolean},
    flagMessage: {type: String},
+   flagType: {type: String},
    createdAt: { type: Date, default: Date.now()}
 });
 

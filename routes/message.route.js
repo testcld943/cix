@@ -72,6 +72,7 @@ router.get('/list', (req, res) => {
       $group: {
       "_id": "$groupId",
       "criticalitySummary": {$max:"$criticality"},
+      "flagTitle":{$first: "$flagType"},
       "title":{$first: "$message"},
       "user":{$first: "$username"}
       //messages: { $push : "$$ROOT" }
