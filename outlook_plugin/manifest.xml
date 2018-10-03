@@ -1,0 +1,19 @@
+xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.1" xsi:type="VersionOverridesV1_1">
+
+<Hosts>
+        <Host xsi:type="MailHost">
+          <DesktopFormFactor>
+            <!-- The functionfile and function name to call on message send.  -->
+            <!-- In this case, the function validateBody will be called within the JavaScript code referenced in residUILessFunctionFileUrl. -->
+            <FunctionFile resid="residUILessFunctionFileUrl" />
+            <ExtensionPoint xsi:type="Events">
+              <Event Type="ItemSend" FunctionExecution="synchronous" FunctionName="validateBody" />
+            </ExtensionPoint>
+          </DesktopFormFactor>
+        </Host>
+      </Hosts>
+<Resources>
+  <bt:Urls>
+    <bt:Url id="functionFile" DefaultValue="https://localhost:44312/Functions/Functions.html"/>
+  </bt:Urls>
+</Resources>
